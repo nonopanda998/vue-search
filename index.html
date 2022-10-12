@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self'"
+  />
+  <meta
+          http-equiv="X-Content-Security-Policy"
+          content="default-src 'self'; script-src 'self'"
+  />
+  <title>来自 Electron 渲染器的问好！</title>
+</head>
+<body>
+<h1>来自 Electron 渲染器的问好！</h1>
+<p>👋</p>
+
+<p id="info">1</p>
+
+Title: <input id="title"/>
+<button id="btn" type="button">Set</button>
+
+
+
+<button type="button" id="btn1">Open a File</button>
+File path: <strong id="filePath"></strong>
+
+Current value: <strong id="counter">0</strong>
+
+
+
+</body>
+<script src="./renderer.js"></script>
+</html>
